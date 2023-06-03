@@ -27,6 +27,7 @@ form.addEventListener("submit", (event) => {
         let del = document.createElement("div");
         del.className += " p-small";
         del.innerHTML = "<i class='bi bi-trash-fill'></i>";
+        del.addEventListener("click", deleteMessage)
         row.appendChild(del);
 
         let time = document.createElement("p");
@@ -38,3 +39,16 @@ form.addEventListener("submit", (event) => {
 
     input.value = "";
 });
+
+function deleteMessage(event) {
+    event.preventDefault()
+    let target = event.target.closest(".message")
+    target.remove()
+}
+
+function deleteMessages() {
+    let messages = document.querySelectorAll('.message');
+    messages.forEach(message => {
+        message.remove();
+    });
+}

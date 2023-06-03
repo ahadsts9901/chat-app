@@ -102,6 +102,7 @@ header {
 .header-row {
     justify-content: left;
     /* column-gap: ; */
+    padding: 1em;
 }
 
 .no-padding {
@@ -178,6 +179,38 @@ section {
     padding: 6.5em 0em 5em 0em;
 }
 
+section::-moz-scrollbar {
+    width: 0.7em;
+    border-radius: 10px;
+    background-color: #212121;
+}
+
+section::-moz-scrollbar-thumb {
+    background-color: #fff;
+}
+
+section::-moz-scrollbar-track {
+    background-color: #212121;
+}
+
+section::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px #212121; */
+    border-radius: 10px;
+    background-color: #212121;
+}
+
+section::-webkit-scrollbar {
+    width: 0.7em;
+    border-radius: 10px;
+    background-color: #212121;
+}
+
+section::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /* -webkit-box-shadow: inset 0 0 6px #212121; */
+    background-color: #fff;
+}
+
 .message {
     background-color: #fff;
     color: #212121;
@@ -197,6 +230,38 @@ section {
     row-gap: 1em;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.message::-moz-scrollbar {
+    width: 0.7em;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.message::-moz-scrollbar-thumb {
+    background-color: #212121;
+}
+
+.message::-moz-scrollbar-track {
+    background-color: #fff;
+}
+
+.message::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px #212121; */
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.message::-webkit-scrollbar {
+    width: 0.7em;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.message::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /* -webkit-box-shadow: inset 0 0 6px #212121; */
+    background-color: #212121;
 }
 
 .p-small {
