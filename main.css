@@ -175,20 +175,39 @@ section {
     flex-direction: column;
     /* justify-content: center; */
     align-items: flex-end;
-    padding: 6.5em 0em 2em 0em;
-    padding-right: 1em;
+    padding: 6.5em 0em 5em 0em;
 }
 
 .message {
     background-color: #fff;
     color: #212121;
     border: 0px;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: right;
-    padding: 0.5em;
-    min-width: 10em;
-    max-width: 10em;
+    padding: 0.8em 0.7em 1em 0.7em;
+    min-width: 15em;
+    max-width: 15em;
+    margin: 0.5em;
+    margin-right: 1em;
+    min-height: 5.5em;
+    max-height: 100%;
+    row-gap: 1em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.p-small {
+    margin: 0em;
+    font-size: 0.6em;
+    height: 100%;
+}
+
+.row-message {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    column-gap: 1em;
 }
