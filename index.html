@@ -35,7 +35,7 @@
             </row>
             <div class="dropdown">
                 <button class="drop-down" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <h2 class="bi bi-three-dots-vertical"></h2>
+                <h2 class="bi bi-three-dots-vertical dots"></h2>
                 </button>
                 <ul class="dropdown-menu">
                     <li class="list"><a href="javascript:void(0)" class="drop-down-options" type="button" onclick="deleteMessages()"><i class="bi bi-trash-fill icon"></i>Clear Chat</a></li>
@@ -53,15 +53,23 @@
     </header>
     <section>
         <!-- <div class="message">
-            <p>This is a message</p>
+            <p class="para">This is a message</p>
         </div> -->
     </section>
-    <form>
-        <label for="file"><h2 class="bi bi-image-fill"></h2></label>
-        <input type="file" class="file" id="file">
-        <input type="text" class="input" placeholder="Enter New Message...">
-        <button type="submit" class="submit"><h2 class="bi bi-send-fill"></h2></button>
-    </form>
+    <div class="form-container">
+        <form class="form">
+            <label for="file"><h2 class="bi bi-image-fill"></h2></label>
+            <input type="file" class="file" id="file">
+            <input type="text" class="input input1" placeholder="User 1">
+            <button type="submit" class="submit"><h2 class="bi bi-send-fill"></h2></button>
+        </form>
+        <form class="form2">
+            <label for="file"><h2 class="bi bi-image-fill"></h2></label>
+            <input type="file" class="file" id="file">
+            <input type="text" class="input input2" placeholder="User 2">
+            <button type="submit" class="submit"><h2 class="bi bi-send-fill"></h2></button>
+        </form>
+    </div>
     <!-- javascript -->
     <script src="./main.js"></script>
     <!-- bootstrap -->

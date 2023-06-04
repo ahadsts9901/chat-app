@@ -35,7 +35,8 @@ a {
 }
 
 row,
-form {
+.form2,
+.form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,13 +44,37 @@ form {
     column-gap: 1em;
 }
 
-form {
-    background-color: #fff;
+.form-container {
     width: 100%;
-    padding: 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
     z-index: 20;
+    background-color: #212121;
+    row-gap: 0em;
+    padding: 0em;
+}
+
+.form {
+    background-color: #fff;
+    width: 100%;
+    padding: 1em 1.5em;
+    border-bottom: 2px dashed #212121;
+    /* position: fixed;
+    bottom: 4.6em;
+    z-index: 20; */
+}
+
+.form2 {
+    background-color: #fff;
+    width: 100%;
+    padding: 1em 1.5em;
+    /* position: fixed;
+    bottom: 0;
+    z-index: 20; */
 }
 
 header,
@@ -101,8 +126,9 @@ header {
 
 .header-row {
     justify-content: left;
-    /* column-gap: ; */
-    padding: 1em;
+    column-gap: 2em;
+    padding: 1em 1.5em;
+    padding-right: 0em;
 }
 
 .no-padding {
@@ -175,8 +201,8 @@ section {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items: flex-end;
-    padding: 6.5em 0em 5em 0em;
+    /* align-items: flex-end; */
+    padding: 9em 0.5em;
 }
 
 section::-moz-scrollbar {
@@ -211,57 +237,79 @@ section::-webkit-scrollbar-thumb {
     background-color: #fff;
 }
 
-.message {
-    background-color: #fff;
-    color: #212121;
-    border: 0px;
+.message,
+.message2 {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: right;
-    padding: 0.8em 0.7em 1em 0.7em;
-    min-width: 15em;
-    max-width: 15em;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    padding: 0em 0.7em 0.6em 0.7em;
+    min-width: 70%;
+    max-width: 70%;
     margin: 0.5em;
     margin-right: 1em;
-    min-height: 5.5em;
-    max-height: 100%;
-    row-gap: 1em;
+    min-height: 7em;
+    max-height: 25em;
+    row-gap: 0.5em;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.message::-moz-scrollbar {
+.message2 {
+    background-color: #212121;
+    color: #fff;
+    border: 2px solid #fff;
+    align-self: flex-start;
+}
+
+.message {
+    background-color: #fff;
+    color: #212121;
+    /* border: 2px dashed #212121; */
+    align-self: flex-end;
+}
+
+.para::-moz-scrollbar {
     width: 0.7em;
     border-radius: 10px;
     background-color: #fff;
 }
 
-.message::-moz-scrollbar-thumb {
+.para::-moz-scrollbar-thumb {
     background-color: #212121;
+    border: 2px solid #fff;
 }
 
-.message::-moz-scrollbar-track {
+.para::-moz-scrollbar-track {
     background-color: #fff;
+    border: 2px solid #212121;
 }
 
-.message::-webkit-scrollbar-track {
+.para::-webkit-scrollbar-track {
     /* -webkit-box-shadow: inset 0 0 6px #212121; */
     border-radius: 10px;
     background-color: #fff;
+    border: 2px solid #212121;
 }
 
-.message::-webkit-scrollbar {
+.para::-webkit-scrollbar {
     width: 0.7em;
     border-radius: 10px;
     background-color: #fff;
 }
 
-.message::-webkit-scrollbar-thumb {
+.para::-webkit-scrollbar-thumb {
     border-radius: 10px;
     /* -webkit-box-shadow: inset 0 0 6px #212121; */
     background-color: #212121;
+    border: 2px solid #fff;
+}
+
+.para {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 0.5em;
 }
 
 .p-small {
@@ -275,4 +323,10 @@ section::-webkit-scrollbar-thumb {
     justify-content: left;
     align-items: baseline;
     column-gap: 1em;
+    width: 100%;
+    position: static;
+}
+
+.dots {
+    margin-right: 1em;
 }
